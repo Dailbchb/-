@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <script src="js/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <div class="cart-wrap">
+        <!-- 购物车头部 -->
+        <div class="cart-header">
+            <ul class="cart-lists">
+                <li class="cart-check">
+                    <input type="checkbox" id="whole" class="whole-check">
+                    <label for="whole" class=""></label><span>&nbsp;全选</span>
+                </li>
+                <li class="cart-con">商品</li>
+                <li class="cart-price">单价(元)</li>
+                <li class="cart-amount">数量</li>
+                <li class="cart-sum">小计</li>
+                <li class="cart-option">操作</li>
+            </ul>
+        </div>
+        <!-- 第一个店铺 -->
+        <!-- 购物车列表内容 -->
+        <div class="cart-box">
+            <div class="shop-info">
+                <div class="all-check fl">
+                    <!-- 商铺的全选 -->
+                    <input type="checkbox" id="showall1" class="shop-check">
+                    <label for="showall1"></label>
+                </div>
+                <div class="shop-name"><a href="">商城自营1</a></div>
+            </div>
+            <!-- 购物车列表内容 -->
+            <div class="cart-content">
+                <ul class="cart-lists">
+                    <li class="cart-check">
+                        <input type="checkbox" id="check1" class="son-check">
+                        <label for="check1"></label>
+                    </li>
+                    <li class="cart-con">
+                        <div class="cart-img">
+                            <a href=""><img src="images/cartS.jpg" alt=""></a>
+                        </div>
+                        <div class="cart-text fs12">表正品男表防水自动机械表经典钢带男士手表潮流休闲腕表5845</div>
+                    </li>
+                    <li class="cart-price">
+                        <p class="price">10</p>
+                    </li>
+                    <li class="cart-amount">
+                        <div class="amount-box">
+                            <button class="reduce" disabled>-</button>
+                            <input type="text" value="1">
+                            <button class="add">+</button>
+                        </div>
+                    </li>
+                    <li class="cart-sum">
+                        <p class="price-sum">10</p>
+                    </li>
+                    <li class="cart-option">
+                        <div class="cart-dele">删除</div>
+                    </li>
+                </ul>
+
+                <ul class="cart-lists">
+                    <li class="cart-check">
+                        <input type="checkbox" id="check2" class="son-check">
+                        <label for="check2"></label>
+                    </li>
+                    <li class="cart-con">
+                        <div class="cart-img">
+                            <a href=""><img src="images/cartS.jpg" alt=""></a>
+                        </div>
+                        <div class="cart-text fs12">表正品男表防水自动机械表经典钢带男士手表潮流休闲腕表5845</div>
+                    </li>
+                    <li class="cart-price">
+                        <p class="price">20</p>
+                    </li>
+                    <li class="cart-amount">
+                        <div class="amount-box">
+                            <button class="reduce" disabled>-</button>
+                            <input type="text" value="1">
+                            <button class="add">+</button>
+                        </div>
+                    </li>
+                    <li class="cart-sum">
+                        <p class="price-sum">20</p>
+                    </li>
+                    <li class="cart-option">
+                        <div class="cart-dele">删除</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 第二个店铺 -->
+        <div class="cart-box">
+            <div class="shop-info">
+                <div class="all-check fl">
+                    <!-- 商铺的全选 -->
+                    <input type="checkbox" id="showall2" class="shop-check">
+                    <label for="showall2"></label>
+                </div>
+                <div class="shop-name"><a href="">商城自营2</a></div>
+            </div>
+            <!-- 购物车列表内容 -->
+            <div class="cart-content">
+                <ul class="cart-lists">
+                    <li class="cart-check">
+                        <input type="checkbox" id="check3" class="son-check">
+                        <label for="check3"></label>
+                    </li>
+                    <li class="cart-con">
+                        <div class="cart-img">
+                            <a href=""><img src="images/cartS.jpg" alt=""></a>
+                        </div>
+                        <div class="cart-text fs12">表正品男表防水自动机械表经典钢带男士手表潮流休闲腕表5845</div>
+                    </li>
+                    <li class="cart-price">
+                        <p class="price">30</p>
+                    </li>
+                    <li class="cart-amount">
+                        <div class="amount-box">
+                            <button class="reduce" disabled>-</button>
+                            <input type="text" value="1">
+                            <button class="add">+</button>
+                        </div>
+                    </li>
+                    <li class="cart-sum">
+                        <p class="price-sum">30</p>
+                    </li>
+                    <li class="cart-option">
+                        <div class="cart-dele">删除</div>
+                    </li>
+                </ul>
+
+                <ul class="cart-lists">
+                    <li class="cart-check">
+                        <input type="checkbox" id="check4" class="son-check">
+                        <label for="check4"></label>
+                    </li>
+                    <li class="cart-con">
+                        <div class="cart-img">
+                            <a href=""><img src="images/cartS.jpg" alt=""></a>
+                        </div>
+                        <div class="cart-text fs12">表正品男表防水自动机械表经典钢带男士手表潮流休闲腕表5845</div>
+                    </li>
+                    <li class="cart-price">
+                        <p class="price">40</p>
+                    </li>
+                    <li class="cart-amount">
+                        <div class="amount-box">
+                            <button class="reduce" disabled>-</button>
+                            <input type="text" value="1">
+                            <button class="add">+</button>
+                        </div>
+                    </li>
+                    <li class="cart-sum">
+                        <p class="price-sum">40</p>
+                    </li>
+                    <li class="cart-option">
+                        <div class="cart-dele">删除</div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- 第三个店铺 -->
+        <div class="cart-box">
+            <div class="shop-info">
+                <div class="all-check fl">
+                    <!-- 商铺的全选 -->
+                    <input type="checkbox" id="showall3" class="shop-check">
+                    <label for="showall3"></label>
+                </div>
+                <div class="shop-name"><a href="">商城自营3</a></div>
+            </div>
+            <!-- 购物车列表内容 -->
+            <div class="cart-content">
+                <ul class="cart-lists">
+                    <li class="cart-check">
+                        <input type="checkbox" id="check5" class="son-check">
+                        <label for="check5"></label>
+                    </li>
+                    <li class="cart-con">
+                        <div class="cart-img">
+                            <a href=""><img src="images/cartS.jpg" alt=""></a>
+                        </div>
+                        <div class="cart-text fs12">表正品男表防水自动机械表经典钢带男士手表潮流休闲腕表5845</div>
+                    </li>
+                    <li class="cart-price">
+                        <p class="price">50</p>
+                    </li>
+                    <li class="cart-amount">
+                        <div class="amount-box">
+                            <button class="reduce" disabled>-</button>
+                            <input type="text" value="1">
+                            <button class="add">+</button>
+                        </div>
+                    </li>
+                    <li class="cart-sum">
+                        <p class="price-sum">50</p>
+                    </li>
+                    <li class="cart-option">
+                        <div class="cart-dele">删除</div>
+                    </li>
+                </ul>
+
+                <ul class="cart-lists">
+                    <li class="cart-check">
+                        <input type="checkbox" id="check6" class="son-check">
+                        <label for="check6"></label>
+                    </li>
+                    <li class="cart-con">
+                        <div class="cart-img">
+                            <a href=""><img src="images/cartS.jpg" alt=""></a>
+                        </div>
+                        <div class="cart-text fs12">表正品男表防水自动机械表经典钢带男士手表潮流休闲腕表5845</div>
+                    </li>
+                    <li class="cart-price">
+                        <p class="price">60</p>
+                    </li>
+                    <li class="cart-amount">
+                        <div class="amount-box">
+                            <button class="reduce" disabled>-</button>
+                            <input type="text" value="1">
+                            <button class="add">+</button>
+                        </div>
+                    </li>
+                    <li class="cart-sum">
+                        <p class="price-sum">60</p>
+                    </li>
+                    <li class="cart-option">
+                        <div class="cart-dele">删除</div>
+                    </li>
+                </ul>
+                <ul class="cart-lists">
+                    <li class="cart-check">
+                        <input type="checkbox" id="check7" class="son-check">
+                        <label for="check7"></label>
+                    </li>
+                    <li class="cart-con">
+                        <div class="cart-img">
+                            <a href=""><img src="images/cartS.jpg" alt=""></a>
+                        </div>
+                        <div class="cart-text fs12">表正品男表防水自动机械表经典钢带男士手表潮流休闲腕表5845</div>
+                    </li>
+                    <li class="cart-price">
+                        <p class="price">70</p>
+                    </li>
+                    <li class="cart-amount">
+                        <div class="amount-box">
+                            <button class="reduce" disabled>-</button>
+                            <input type="text" value="1">
+                            <button class="add">+</button>
+                        </div>
+                    </li>
+                    <li class="cart-sum">
+                        <p class="price-sum">70</p>
+                    </li>
+                    <li class="cart-option">
+                        <div class="cart-dele">删除</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 总价 -->
+    <div class="cart-footer">
+        <div>已选择的商品:<span class="buy-num">0</span></div>
+        <div>总价:<span class="pay-price">0</span></div>
+    </div>
+    <!-- 模态框 -->
+    <div class="modal-bg"></div>
+    <div class="modal-box">
+        <h2>提示</h2>
+        <p>亲,您确定要放弃该宝贝吗？</p>
+        <div class="btn">
+            <button class="ok">确定</button>
+            <button class="close">取消</button>
+        </div>
+    </div>
+    <script>
+        // 合计函数
+        function total(){
+            // 选中的总个数
+            var totalCount = 0;
+            //总计
+            var totalPrice = 0;
+            // 遍历所有商品的复选框
+            $('.son-check').each(function(index,value){
+                // 判断是否被选中
+                if($(this).is(':checked')){
+                    // 获取选中商品数量框中的value值
+                    var goodsCount = $(this).parents('.cart-lists').find('.cart-amount').find('input').val();
+                    // 获取改选中商品的单价
+                    var goodsPrice = $(this).parents('.cart-lists').find('.price-sum').text();
+
+                    totalCount+=Number(goodsCount);
+                    totalPrice+=Number(goodsPrice);
+                };
+                // 将相加的值添加到选择的商品数量和总价
+                $('.buy-num').text(totalCount);
+                $('.pay-price').text(totalPrice)
+            })
+        }
+
+
+        //1.所有的复选框选中或者取消事件
+        //复选框改变事件
+        $('input[type=checkbox]').change(function () {
+            // console.log($(this).is(':checked'));
+            // 判断触发事件的复选框是否被选中
+            if ($(this).is(':checked')) {
+                // 复选框的后边的label兄弟元素，添加类名，改变样式
+                $(this).next('label').addClass('active');
+            } else {   //删除类名，原样式
+                $(this).next('label').removeClass('active');
+            }
+        });
+
+        //2.全选选中-全选取消事件---合计执行
+        $('.whole-check').change(function(){
+            // 获取除了全选框之外的所有复选框
+            var checkboxOther = $('input[type="checkbox"]').not('.whole-check');
+            // 判断全选框是否被选中
+            if($(this).is(':checked')){
+                // 是--其他也选中
+                checkboxOther.prop('checked',true);
+                // 并且其他的下一个label元素改变样式
+                checkboxOther.next('label').addClass('active');
+            }else{
+                checkboxOther.prop('checked',false);
+                checkboxOther.next('label').removeClass('active');
+            }
+            // 执行合计
+            total();
+        })
+
+        // 3.店铺的选择框选中, 该店铺下的所有商品也被选中,如果没有被选中,该店铺下的商品也不选中,所有店铺选择框全部选中,全选选中-任何一个不选,全选取消------合计执行
+        $('.shop-check').change(function(){
+            // 获取店铺下商品的复选框
+            var sonCheckCar = $(this).parents('.cart-box').find('.son-check');
+            // 店铺选择框选中时
+            if($(this).is(':checked')){
+                // 其下所有商品选择框也选中
+                sonCheckCar.prop('checked',true);
+                // label改变样式
+                sonCheckCar.next('label').addClass('active')
+            }else{
+                sonCheckCar.prop('checked',false);
+                sonCheckCar.next('label').removeClass('active');
+            };
+            // 获取商店个数
+            var count = $('.shop-check').length;
+            // 获取选中商店个数
+            var num = $('.shop-check:checked').length;
+            // 如果相等则表示全部选中，全选框选中并改变样式
+            if(count==num){
+                $('.whole-check').prop('checked',true);
+                $('.whole-check').next('label').addClass('active');
+            }else{
+                $('.whole-check').prop('checked',false);
+                $('.whole-check').next('label').removeClass('active');
+            };
+            // 执行合计
+            total();
+        })
+
+        // 4.该店铺商品全部选中,该店铺的选择框选中,任何一个不选,该店铺的选择框不选---合计
+        $('.son-check').change(function(){
+            var thisShop = $(this).parents('.cart-box');
+            if($(this).is(':checked')){
+                var count = thisShop.find('.son-check').length;
+                var num = thisShop.find('.son-check:checked').length;
+                if(count==num){
+                    thisShop.find('.shop-check').prop('checked',true);
+                    thisShop.find('.shop-chenk').next('label').addClass('active');
+                }else{
+                    thisShop.find('.shop-check').prop('checked',false);
+                    thisShop.find('.shop-check').next('label').removeClass('active');
+                }
+            }else{
+                thisShop.find('shop-check').prop('checked',false);
+                thisShop.find('.shop-check').next('label').removeClass('active');
+            }
+            //执行合计
+            total();
+        });
+
+         // 5.商品全部选中,全选按钮选中-任何一个不选,全选取消 ------合计
+         $('.son-check').change(function() {
+            // 商品的DOM元素的数量
+            var count = $('.son-check').length;
+            // 选中商品的DOM元素的数量
+            var num = $('.son-check:checked').length;
+            if (count == num) {
+                $('.whole-check').prop('checked', true);
+                $('.whole-check').next('label').addClass('active');
+            } else {
+                $('.whole-check').prop('checked', false);
+                $('.whole-check').next('label').removeClass('active');
+            };
+            // 执行合计
+            total();
+        });
+
+        // 6.加事件 ------合计执行
+        // 添加按钮绑定点击事件
+        $('.add').click(function() {
+            // 使减按钮解除禁用
+            $(this).prevAll('.reduce').prop('disabled', false);
+            // 使input框的value值加1
+            var input = $(this).prev('input');
+            var addNum = Number(input.val()) + 1;
+            input.val(addNum);
+            // 改变小计
+            // 获取单价
+            var price = $(this).parents('.cart-lists').find('.price').text();
+            $(this).parents('.cart-lists').find('.price-sum').text(price * addNum);
+
+            // 执行合计
+            total();
+        });
+
+        // 7.减事件 ------合计执行
+        $('.reduce').click(function() {
+            var input = $(this).next('input');
+            var reduceNum = Number(input.val()) - 1;
+            input.val(reduceNum);
+            // 判断数量为1时禁用
+            if (reduceNum == 1) {
+                $(this).prop('disabled', true);
+            };
+            // 改变小计
+            // 获取单价
+            var price = $(this).parents('.cart-lists').find('.price').text();
+            $(this).parents('.cart-lists').find('.price-sum').text(price * reduceNum);
+            // 执行合计
+            total();
+
+        });
+
+        // 8.输入产品计算商品价格小计 ------合计执行
+        // 商品数量框绑定键盘弹起事件
+        $('input[type=text]').keyup(function() {
+            // 判定输入是否合法
+            var inputValue = $(this).val().replace(/\D|^0/, '');
+            // 判断不符合，value值为1
+            if (!inputValue) {
+                inputValue = 1;
+            };
+            // 将值设置给val
+            $(this).val(inputValue);
+            // 3.改变小计
+            // 获取单价
+            var price = $(this).parents('.cart-lists').find('.price').text();
+            $(this).parents('.cart-lists').find('.price-sum').text(price * inputValue);
+
+            // 执行合计
+            total();
+
+        });
+        // 9.删除事件-模态框(删除的弹出框)的取消和确定------合计执行
+        // 删除按钮绑定点击事件
+        $('.cart-dele').click(function() {
+            // 当点击删除时,让模态框显示
+            $('.modal-bg').fadeIn();
+            $('.modal-box').fadeIn();
+            // 点击取消时,模态框关闭
+            $('.close').click(function() {
+                $('.modal-bg').fadeOut();
+                $('.modal-box').fadeOut();
+            });
+            // 点击ok后删除当条商品的DOM元素
+            // 找到最大的商品信息的DOM元素
+            var cartLists = $(this).parents('.cart-lists');
+            var carContent = $(this).parents('.cart-content')
+            var carBox = $(this).parents('.cart-box')
+            // 确定按钮绑定点击事件
+            $('.ok').click(function() {
+                // 删除当条商品的DOM元素
+                cartLists.remove();
+                // 删除商品的店铺全部删除后,该店铺的DOM元素也要删除
+                if (carContent.children().length == 0) {
+                    carContent.parents('.cart-box').remove();
+                };
+                // 对商铺的全选和全选进行监听
+                // 该店铺下所有商品的DOM元素的数量
+                var count = carContent.find('.son-check').length;
+                // 选中商品的DOM元素的数量
+                var num = carContent.find('.son-check:checked').length;
+                // console.log(count);
+                // console.log(num);
+                // 如果相等让店铺选中，改变样式
+                if (count == num) {
+                    carBox.find('.shop-check').prop('checked', true);
+                    carBox.find('.shop-check').next('label').addClass('active');
+                } else {
+                    carBox.find('.shop-check').prop('checked', false);
+                    carBox.find('.shop-check').next('label').removeClass('active');
+                };
+                // 全选选择框进行监听
+                var shopCount = $('.shop-check').length;
+                // 选中的店铺的DOM元素的数量
+                var shopNum = $('.shop-check:checked').length;
+                // 如果相等那么全选选中，改变样式
+                if (shopCount == shopNum) {
+                    $('.whole-check').prop('checked', true);
+                    $('.whole-check').next('label').addClass('active');
+                } else {
+                    $('.whole-check').prop('checked', false);
+                    $('.whole-check').next('label').removeClass('active');
+                };
+                // 执行合计
+                total();
+                // 将模态框隐藏
+                $('.modal-bg').fadeOut();
+                $('.modal-box').fadeOut();
+            });
+
+        });
+    </script>
+</body>
+
+</html>
